@@ -10,11 +10,22 @@ extern switch_case();
 int main ()
 {
     int i=0;
-    while(i<=10)
+    int y=0;
+
+    do
     {
-        printf("Variable i = %d\n", i);
-        i++;
+    printf("Variable i = %d\n", i);
+    i++;
+    } while (i>10);
+
+    printf("**********\n");
+
+    while(y>10)
+    {
+        printf("Variable y = %d\n", y);
+        y++;
     }
+
 }
 
 
