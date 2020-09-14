@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
+int main ()
 {
-    int a = 11;
-    int b = 3;
+    int var = 20; // actual variable initialization
+    int *pointer; // pointer variable declaration
+    pointer = &var; // taking address of the var variable and storing it in pointer variable
 
-    int sum;
-    sum = a % b;
-    printf("%d", sum);
+    printf("var variable address: %x\n", pointer);
+    printf("taking the actual value of the variable using pointer: %d", *pointer);
+
     return 0;
 }
