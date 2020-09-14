@@ -10,9 +10,9 @@ extern int do_while_loop ();
 
 int main()
 {
-    for (int i=0; i<=10; i++)
+    for (int i=1,y=100; i<y; i++, y--)
     {
-        printf("i = %d\n", i);
+        printf("i = %d, y = %d\n", i,y);
     }
 }
 
