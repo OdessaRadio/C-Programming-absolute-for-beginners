@@ -4,9 +4,22 @@
 extern int point_test();
 extern int if_else();
 extern int ternary();
+extern switch_case();
 
 
-int main()
+int main ()
+{
+    int i=0;
+    while(i<=10)
+    {
+        printf("Variable i = %d\n", i);
+        i++;
+    }
+}
+
+
+// Practice switch case
+int switch_case()
 {
     int mark;
     printf("Enter mark:");
@@ -36,7 +49,7 @@ int main()
 
 }
 
-
+// Practice ternary operator
 int ternary()
 {
     // The ternary or conditional operator in C
@@ -82,6 +95,8 @@ int if_else()
 // Practice pointers
 int point_test ()
 {
+
+
     int var1 = 20; // actual variable initialization
     int var2 = 10;
     int *pointer; // pointer variable declaration
