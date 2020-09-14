@@ -1,6 +1,32 @@
 #include <stdio.h>
 
-int main ()
+extern int point_test();
+
+int main()
+{
+    int age;
+    printf("Please, etner your age: ");
+    scanf("%d", &age); // storing user input data in the address of the age actual variable
+    printf("Entered text is: %d\n\n", age);
+    if (age>18)
+        {
+        printf("The age is greater than 18");
+        }
+
+    if (age==18)
+        {
+        printf("The age is 18");
+        }
+
+    if (age<18)
+        {
+        printf("The age is lower than 18");
+        }
+
+}
+
+// Practice pointers
+int point_test ()
 {
     int var1 = 20; // actual variable initialization
     int var2 = 10;
