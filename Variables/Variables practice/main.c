@@ -1,8 +1,34 @@
 #include <stdio.h>
 
-extern int point_test();
+extern int point_test()
+extern if_else
+extern ternary
+
 
 int main()
+{
+
+}
+
+
+int ternary()
+{
+    // The ternary or conditional operator in C
+    // logical expression ? if true :  if false
+    printf("Find the greatest number\n\n");
+    int a,b,c;
+    printf("Enter digit1:");
+    scanf("%d'", &a);
+    printf("Enter digit2:");
+    scanf("%d", &b);
+
+    c = (a>b)?a:b;
+    printf("The greatest number is: %d", c);
+}
+
+
+// Practice If ELSE
+int if_else()
 {
     int age;
     printf("Please, etner your age: ");
