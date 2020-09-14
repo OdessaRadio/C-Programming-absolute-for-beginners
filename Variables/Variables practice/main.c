@@ -4,10 +4,20 @@
 extern int point_test();
 extern int if_else();
 extern int ternary();
-extern switch_case();
+extern int switch_case();
+extern int do_while_loop ();
 
 
-int main ()
+int main()
+{
+    for (int i=0; i<=10; i++)
+    {
+        printf("i = %d\n", i);
+    }
+}
+
+// Do While loops
+int do_while_loop ()
 {
     int i=0;
     int y=0;
