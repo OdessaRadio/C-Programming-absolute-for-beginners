@@ -8,21 +8,23 @@ int main()
     printf("Please, etner your age: ");
     scanf("%d", &age); // storing user input data in the address of the age actual variable
     printf("Entered text is: %d\n\n", age);
+
     if (age>18)
         {
-        printf("The age is greater than 18");
-        }
-
-    if (age==18)
+        printf("The age is greater than 18\n");
+        if (age<21)
         {
-        printf("The age is 18");
+            printf("The age is less than 21\n");
         }
-
-    if (age<18)
+        }
+    else if (age==18)
         {
-        printf("The age is lower than 18");
+        printf("The age is equal to 18\n");
         }
-
+    else
+        {
+        printf("The age is lower than 18\n");
+        }
 }
 
 // Practice pointers
