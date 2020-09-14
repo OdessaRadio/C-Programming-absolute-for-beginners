@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern int a;
-
-
 int main()
 {
-    int a;
-    a = 10;
-    printf("Hello world! The number is %d\n", a);
+    int a = 11;
+    int b = 3;
+
+    int sum;
+    sum = a % b;
+    printf("%d", sum);
     return 0;
 }
