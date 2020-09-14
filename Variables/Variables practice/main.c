@@ -1,12 +1,38 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-extern int point_test()
-extern if_else
-extern ternary
+extern int point_test();
+extern int if_else();
+extern int ternary();
 
 
 int main()
 {
+    int mark;
+    printf("Enter mark:");
+    scanf("%d", &mark);
+
+    switch(mark)
+    {
+    case 95:
+    case 90:
+        printf("Excellent");
+        break;
+    case 80:
+        printf("Very Good");
+        break;
+    case 50:
+        printf("Good");
+        break;
+    case 30:
+        printf("Poor");
+        break;
+    case 10:
+        printf("Bad");
+        break;
+    default:
+        printf("You need to reexamine\n");
+    }
 
 }
 
