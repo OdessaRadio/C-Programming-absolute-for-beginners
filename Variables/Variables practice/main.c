@@ -8,7 +8,7 @@ extern int switch_case();
 extern int do_while_loop ();
 extern int for_loop ();
 
-int global_v=25; //global variable
+int global_v=25; //global  declaration
 
 void NumberPrint()
 {
