@@ -8,6 +8,24 @@ extern int switch_case();
 extern int do_while_loop ();
 extern int for_loop ();
 
+int global_v=25; //global variable
+
+void NumberPrint()
+{
+    printf("Global variable g = %d\n", global_v);
+}
+
+int main()
+{
+    int global_v=10; //global variable
+    printf("global_v = %d\n", global_v);
+    NumberPrint();
+
+}
+
+
+
+/*
 int mult(int a, int b)
 {
     return (a*b);
@@ -25,7 +43,7 @@ int main()
     printf("Multiplication result + 10 is: %d\n",(mult(x,y))+10);
 }
 
-
+*/
 
 
 // For loop
