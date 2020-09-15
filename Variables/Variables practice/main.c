@@ -8,10 +8,9 @@ extern int switch_case();
 extern int do_while_loop ();
 extern int for_loop ();
 
-void Sum(int a, int b)
+int mult(int a, int b)
 {
-    int sum = a+b;
-    printf("Sum = %d\n", sum);
+    return (a*b);
 }
 
 // Practicing functions
@@ -23,7 +22,7 @@ int main()
     printf("Please, enter number 2:\n");
     scanf("%d", &y);
 
-    Sum(x,y);
+    printf("Multiplication result + 10 is: %d\n",(mult(x,y))+10);
 }
 
 
