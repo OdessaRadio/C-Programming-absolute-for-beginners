@@ -1,23 +1,32 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-int getSum(int *array_val, int size)
-{
-    printf("%d\n", array_val[0]);
-    int sum=0;
-    for(int i=0; i<size; i++)
-    {
-        sum += array_val[i];
-    }
-    return sum;
-}
 
 int main()
 {
-    int my_array[4]={10,20,30,40};
-    int mySum = getSum(my_array,4); // The array name itself is the address of first element of that array
-                                    // For example if array name is arr then you can say that arr is equivalent to the &arr[0].
+    //char my_other_string[]="Hello"; // Another way of defining the string
+    char string1[12]="Hello";
+    char string2[12]="Hello";
+    char string3[12];
 
-    printf("The sum of my_array elements is: %d\n", mySum);
+    //printf("my_other_string value = %s\n", my_string);
+
+    strcpy(string3,string1); // string3 - destination; string1 - source
+    printf("string3 = %s\n", string3);
+
+    strcat(string1,string2);
+    printf("string1 = %s\n", string1);
+
+    int len_string1;
+    len_string1 = strlen(string1); // get string value
+    printf("len_string1 = %d\n", len_string1);
+
+    int var;
+    var = strcmp (string2,string1);
+    printf("var = %d\n", var);
+
+
+    return 0;
 }
 
