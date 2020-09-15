@@ -1,19 +1,20 @@
 #include<stdio.h>
+#include<stdlib.h>
+
+
 
 void main()
 {
-    int MyArray [2][3]=
-    {
-    {1,2,3}, // row 1, index 0
-    {4,5,6}  // row 2, index 1
-    };
+    int val_array[3]={30,40,50};
+    int *pointer_array[3];
 
-    for (int y=0; y<2; y++)
+    for(int i=0; i<3; i++)
     {
-        for (int x=0; x<3; x++)
-        {
-            printf("MyArray[%d][%d]=%d\n",y,x,MyArray[y][x]);
-        }
-        printf("\n");
-    };
+        pointer_array[i]=&val_array[i];
+        printf("Array element %d has address %x\n",*pointer_array[i], pointer_array[i]);
+    }
+
+
+
 }
+
