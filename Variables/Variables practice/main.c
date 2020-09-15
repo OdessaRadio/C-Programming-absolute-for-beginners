@@ -6,9 +6,25 @@ extern int if_else();
 extern int ternary();
 extern int switch_case();
 extern int do_while_loop ();
+extern int for_loop ();
 
+void print_func();
 
+// Practicing functions
 int main()
+{
+    print_func();
+}
+
+void print_func() // void means function will return nothing
+{
+    printf("sum=%d\n", 10+25);
+    printf("We are inside a print_func\n");
+}
+
+
+// For loop
+int for_loop ()
 {
     for (int i=1,y=100; i<y; i++, y--)
     {
