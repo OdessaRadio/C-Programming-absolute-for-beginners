@@ -1,27 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
 
-void PrintFunc();
-
-int main()
+void main()
 {
-    int MyNumberArray [3] = {20,30,60}; // [3] - array dimension
-    //printf("The size of the array is %d\n",  sizeof MyNumberArray/sizeof MyNumberArray[0]);
-    int size = sizeof MyNumberArray/sizeof MyNumberArray[0];
-    //printf("The size of array is: %d\n", size);
-    PrintFunc(MyNumberArray, size);
-
-    //PrintFunc(MyNumberArray1);
-}
-
-// Function to print the array
-void PrintFunc(int PrintArray[],int size)
-{
-
-    printf("The size of array is: %d\n", size);
-    for (int i=size; i>=0; i--)
+    int MyArray [2][3]=
     {
-        printf("%d\n", PrintArray[i]);
-    }
-}
+    {1,2,3}, // row 1, index 0
+    {4,5,6}  // row 2, index 1
+    };
 
+    for (int y=0; y<2; y++)
+    {
+        for (int x=0; x<3; x++)
+        {
+            printf("MyArray[%d][%d]=%d\n",y,x,MyArray[y][x]);
+        }
+        printf("\n");
+    };
+}
