@@ -8,19 +8,25 @@ extern int switch_case();
 extern int do_while_loop ();
 extern int for_loop ();
 
-void print_func();
+void Sum(int a, int b)
+{
+    int sum = a+b;
+    printf("Sum = %d\n", sum);
+}
 
 // Practicing functions
 int main()
 {
-    print_func();
+    int x,y;
+    printf("Please, enter number 1:\n");
+    scanf("%d", &x);
+    printf("Please, enter number 2:\n");
+    scanf("%d", &y);
+
+    Sum(x,y);
 }
 
-void print_func() // void means function will return nothing
-{
-    printf("sum=%d\n", 10+25);
-    printf("We are inside a print_func\n");
-}
+
 
 
 // For loop
