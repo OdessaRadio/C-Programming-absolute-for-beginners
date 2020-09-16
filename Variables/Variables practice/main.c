@@ -3,20 +3,29 @@
 #include <string.h>
 
 
-struct student {
-    int id;             //members of the structure
-    char name[20];      //
-    float percentage;   //
+//struct student { // struct members are allocated in the dedicated memory area
+//    int myInt;
+//    char myChar;
+//};
+
+union myUnion{      // union allocate memory size according to the max size of memebers.
+    int myInt;  //4 bytes -> union memory allocation. All members inside union same memory is used
+    char myChar;//1 byte
+    float myFloat;
 };
 
 int main()
 {
-    struct student record1; // record1 is a variable defined for student structure
-    record1.id = 1;
-    strcpy(record1.name, "John");
-    record1.percentage = 70.2;
+    union myUnion uni;
 
-    printf("id = $d Name = %s Percentage = %f\n",record1.id, record1.name, record1.percentage );
+    uni.myInt = 4; // this member overwrite the memory with int 4 bytes
+    uni.myChar = 9;
+    uni.myFloat = 0.5;
+
+    printf("%i \n",uni.myChar);
+    printf("%i \n",uni.myInt);
+    printf("%i \n",uni.myFloat);
+    printf("%d \n",sizeof(uni));
 
     return 0;
 }
